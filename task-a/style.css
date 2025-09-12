@@ -1,0 +1,20 @@
+/*
+  Author: Glen Mustonen
+  Date: 2025-09-12
+*/
+
+/*Color of the paragraph "Glen Mustonen"*/
+p {
+  color: coral;
+}
+
+/*Color and font-size for heading "Hello Web" */
+h1 {
+  color: coral;
+  font-size: 50px;
+}
+
+/*Color for the background*/
+body {
+  background-color: beige;
+}
