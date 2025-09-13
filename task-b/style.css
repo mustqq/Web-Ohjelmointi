@@ -1,0 +1,56 @@
+/*
+  Author: Glen Mustonen
+  Date: 2025-09-13
+*/
+
+/*Website's background color*/
+body {
+  background-color: color-mix(in hsl, beige, chocolate 25%);
+  cursor: url("../pictures/output-onlinepngtools.png") 16 16, pointer;
+}
+
+/*Header1 color "Glen-Henrik Mustonen"*/
+h1 {
+  color: maroon;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+/*Header2 color "My Goals for This Course"*/
+h2 {
+  color: maroon;
+  font-size: 35px;
+  font-family: cursive;
+}
+
+/*Paragraph color*/
+p {
+  color: midnightblue;
+  font-family: cursive;
+}
+
+/*Unordered list style*/
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: darkslategray;
+  font-family: cursive;
+}
+
+/*Ordered list style*/
+ol {
+  list-style-type: square;
+  padding-left: 20px;
+  color: darkslategray;
+  font-family: cursive;
+}
+
+/*List style*/
+li {
+  margin-bottom: 4px;
+  font-family: cursive;
+}
+
+a {
+  font-family: cursive;
+}
