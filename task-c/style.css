@@ -4,9 +4,9 @@
 */
 
 h1 {
-  display: flex;
-  justify-content: center;
-  font-family: 'Orbitron', 'Bebas Neue', 'Anton', sans-serif;
+  display: flex; /*Centers header*/
+  justify-content: center; /*Centers header*/
+  font-family: 'Orbitron', 'Bebas Neue', 'Anton', sans-serif; /*font*/
 }
 
 img {
@@ -14,9 +14,9 @@ img {
   max-width: 500px;
   height: 100%;
   max-height: 500px;
-  display: block;
+  display: flex; /*Use flex for horizontal and vertical centering — requires margin: auto or alignment props*/
   margin: auto;
-  border-radius: 30px;
+  border-radius: 30px; /*makes corners curved*/
 }
 
 video {
@@ -27,7 +27,7 @@ video {
 }
 
 audio {
-  display: block;
+  display: flex;
   margin: auto;
   margin-bottom: 30px;
   border-radius: 30px;
