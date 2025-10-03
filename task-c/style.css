@@ -2,3 +2,43 @@
   Author: Glen Mustonen
   Date: 2025-09-13
 */
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Orbitron', 'Bebas Neue', 'Anton', sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+}
+
+video {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
+audio {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+body {
+  background: linear-gradient(#271454, black);
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-family: 'Orbitron', 'Bebas Neue', 'Anton', sans-serif;
+}
