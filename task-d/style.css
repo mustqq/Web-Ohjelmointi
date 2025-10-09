@@ -1,0 +1,61 @@
+/*
+  Author: Glen Mustonen
+  Date: 2025-10-9
+*/
+
+body {
+  background: #ba4614;
+  background: radial-gradient(#f69d3c, #3f87a6);
+  padding-bottom: 291px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+}
+
+li {
+  list-style: none;
+  padding-left: 24px;
+  background: url("../pictures/vecteezy_cute-sea-fish-cartoon_22691399.png") no-repeat left center;
+  background-size: 16px 16px;
+}
+
+.paragraph-trout {
+  padding-left: 702px;
+  line-break: normal;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding-left: 702px;
+}
+
+section ul li {
+  color: rgb(97, 6, 6);
+}
+
+h1, h2 {
+  font-size: 50px;
+}
+
+a[target] {
+  color: yellow;
+}
+
+img[alt] {
+  border-radius: 25px;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+h1, p {
+  color: rgb(56, 8, 100);
+}
