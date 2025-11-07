@@ -1,3 +1,7 @@
+// index.js
+// Author: Glen-Henrik Mustonen
+// Date: 2025-11-07
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('regForm');
   const tsInput = document.getElementById('timestamp');
