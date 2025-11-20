@@ -1,0 +1,199 @@
+<!--
+  Author: Glen Mustonen
+  Date: 2025-11-20
+-->
+
+<!DOCTYPE HTML>
+<html lang="fi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../pictures/toyorent-head.png">
+  <title>Toyorent</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="header-left-group">
+      <a href="index.html" class="site-logo">
+        <img src="../pictures/toyorent.png" alt="Toyorent logo" width="128" height="128" loading="lazy">
+      </a>
+    </div>
+
+    <div class="header-middle-group">
+      <p>Toyorent - vain jos perille pääsy on tärkeintä</p>
+    </div>
+
+    <div class="header-right-group">
+      <div class="contact-row">
+        <i class="fab fa-whatsapp"></i>
+        <span class="phone-number">040 123 4567</span>
+      </div>
+
+      <div class="contact-row">
+        <i class="fab fa-envelope"></i>
+        <span class="email">glen@toyorent.fi</span>
+      </div>
+
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li id="etusivu"><a href="index.html">Etusivu</a></li>
+      <li id="autot"><a href="autot.html">Autot</a></li>
+      <li id="yhteystiedot"><a href="yhteystietolomake.html">Yhteystietolomake</a></li>
+      <li id="hinnasto"><a href="tiedot.html">Tietoa meistä</a></li>
+    </ul>
+  </nav>
+
+
+ <section class="contact-section">
+    <div class="contact-container">
+
+      <h1>Varaus- ja yhteydenottolomake</h1>
+      
+      <!-- TÄMÄ TEKSTI PIILOTETAAN LÄHETYKSEN JÄLKEEN -->
+      <p id="intro-text">Täytä tiedot, niin olemme sinuun yhteydessä pikimmiten.</p>
+
+      <!-- UUSI: ONNISTUMISVIESTI (Oletuksena piilossa style="display: none") -->
+      <div id="success-message" style="display: none; text-align: center; padding: 40px;">
+          <i class="fas fa-check-circle" style="color: #EB0A1E; font-size: 60px; margin-bottom: 20px;"></i>
+          <h2 style="color: white;">Kiitos varauspyynnöstäsi!</h2>
+          <p style="color: #ccc; font-size: 18px;">Olemme vastaanottaneet tietosi. Otamme sinuun yhteyttä pian vahvistaaksemme varauksen.</p>
+          <button onclick="location.reload()" class="submit-btn" style="width: auto; padding: 10px 30px; margin-top: 20px;">Palaa lomakkeeseen</button>
+      </div>
+
+      <!-- LOMAKE (Lisäsin tähän id="rental-form") -->
+      <form id="rental-form" action="#" method="POST" class="rental-form">
+
+        <h2 class="form-section-title">Vuokrauksen tiedot</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Auton merkki</label>
+            <select name="car-make">
+              <option value="" disabled selected>Valitse merkki</option>
+              <option value="toyota">Toyota</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Auton malli</label>
+            <select name="car-model">
+              <option value="" disabled selected>Valitse malli</option>
+              <option value="corolla">Corolla</option>
+              <option value="yaris">Yaris</option>
+              <option value="supra">Supra</option>
+              <option value="hilux">Hilux</option>
+              <option value="hiace">Hiace</option>
+              <option value="proace">Proace</option>
+              <option value="retkihiace">Retkihiace</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Noutopäivä</label>
+            <input type="date" name="pickup-date">
+          </div>
+          <div class="form-group">
+            <label>Palautuspäivä</label>
+            <input type="date" name="dropoff-date">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" name="pickup-loc" placeholder="Noutopaikka (esim. Helsinki)">
+          </div>
+          <div class="form-group">
+            <input type="text" name="dropoff-loc" placeholder="Palautuspaikka">
+          </div>
+        </div>
+
+        <h2 class="form-section-title">Omat tietosi</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" name="firstname" placeholder="Etunimi" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="lastname" placeholder="Sukunimi" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Sähköpostiosoite" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="number" name="age" placeholder="Ikäsi" min="18">
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Puhelinnumero (+358...)">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="country" placeholder="Kotimaa">
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Erityistoiveet tai kysymykset? Kirjoita tähän."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">LÄHETÄ VARAUSPYYNTÖ</button>
+
+      </form>
+    </div>
+  </section>
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Palaa ylös">
+    &#8679;
+</button>
+
+<script>
+    
+    const form = document.getElementById("rental-form");
+    const successMessage = document.getElementById("success-message");
+    const introText = document.getElementById("intro-text");
+
+    if (form) {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            form.style.display = "none";
+            if(introText) introText.style.display = "none";
+
+            successMessage.style.display = "block";
+            
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    }
+
+    let mybutton = document.getElementById("backToTopBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+
+</body>
